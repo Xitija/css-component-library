@@ -44,6 +44,16 @@ export const playListReducer = (state, action) => {
   console.log(action);
   switch (action.type) {
     case "ADD_TO_PLAYLIST":
+      const playlistToAdd = state.find(
+        (playlist) => playlist._id === action.payload.playListId
+      );
+      const updatedPlaylist = {
+        ...playlistToAdd,
+        videos: [...playlistToAdd.videos, action.payload.video],
+      };
+      return state.map((playlist) =>
+        playlist._id === action.payload.playListId ? updatedPlaylist : playlist
+      );
 
     case "REMOVE_FROM_PLAYLIST":
 

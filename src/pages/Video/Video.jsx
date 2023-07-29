@@ -112,7 +112,23 @@ export const Video = () => {
             </div>
             <div className="playlist-item">
               {playlists?.map((playList) => (
-                <li>{playList?.title}</li>
+                <li
+                  key={playList._id}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setVisible(true);
+                    playlistsDispatcher({
+                      type: "ADD_TO_PLAYLIST",
+                      payload: {
+                        playListId: playList._id,
+                        video: video,
+                      },
+                    });
+                    setNewPlaylist(initialState);
+                  }}
+                >
+                  {playList?.title}
+                </li>
               ))}
             </div>
           </div>
