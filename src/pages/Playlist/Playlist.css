@@ -1,0 +1,31 @@
+.play-lists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlist-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.playlist-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.playlist-card p {
+    font-weight: bold;
+}
+
+.playlist-card .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.new-playlist {
+    display: flex;
+    align-items: center;
+}
