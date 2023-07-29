@@ -1,0 +1,26 @@
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-menu .logo {
+    width: 65%;
+    padding-bottom: 1.5rem;
+}
+
+.navigation-menu .link {
+    padding: 1rem 0;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.navigation-menu .link:hover {
+    background-color: #91C8E4;
+}
+
+.navigation-menu .link .icon {
+    padding: 0 1rem;
+}
