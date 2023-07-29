@@ -24,9 +24,9 @@ export const Menu = () => {
         <AiFillCompass className="icon" />
         Explore
       </NavLink>
-      <NavLink className="link" to="/playlist" style={getActiveStyle}>
+      <NavLink className="link" to="/playlists" style={getActiveStyle}>
         <RiPlayList2Fill className="icon" />
-        Playlist
+        Playlists
       </NavLink>
       <NavLink className="link" to="/watchlater" style={getActiveStyle}>
         <AiFillClockCircle className="icon" />
