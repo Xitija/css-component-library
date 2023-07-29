@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 
+import { useWatchList } from "../../contexts/WatchListContext";
+
 import { AiFillClockCircle } from "react-icons/ai";
 
 import "./VideoCard.css";
 
 export const VideoCard = ({ video }) => {
-  console.log(video);
+  const { watchList, addToWatchList, removeFromWatchList } = useWatchList();
+
+  const inWatchlist = watchList?.some(({ _id }) => _id === video?._id);
 
   return (
     <NavLink className="video-card" to={`/video/${video?._id}`}>
@@ -24,8 +28,15 @@ export const VideoCard = ({ video }) => {
           </p>
         </div>
       </div>
-      <div className="watch-later">
-        <AiFillClockCircle size={20}/>
+      <div
+        className="watch-later"
+        onClick={(e) => {
+          e.preventDefault();
+          inWatchlist ? removeFromWatchList(video) : addToWatchList(video);
+        }}
+        style={{ color: inWatchlist ? "#749BC2" : "black" }}
+      >
+        <AiFillClockCircle size={20} />
       </div>
     </NavLink>
   );
