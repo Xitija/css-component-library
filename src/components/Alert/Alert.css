@@ -1,0 +1,66 @@
+.alert {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 0 1rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.alert-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.alert>* {
+    margin-right: 0.5rem;
+}
+
+.svg-icon-close {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.simple-alert-success {
+    background: rgb(198, 246, 213);
+}
+
+.simple-alert-error {
+    background: rgb(255, 204, 204);
+}
+
+.simple-alert-warning {
+    background: rgb(255, 240, 147);
+}
+
+.simple-alert-info {
+    background: rgb(210, 236, 253);
+}
+
+.solid-alert-success {
+    background: rgb(41, 161, 79);
+    color: white;
+}
+
+.solid-alert-error {
+    background: rgb(224, 18, 18);
+    color: white;
+}
+
+.solid-alert-info {
+    background: rgb(10, 143, 255);
+    color: white;
+}
+
+.solid-alert-warning {
+    background: rgb(241, 216, 54);
+    color: white;
+}
