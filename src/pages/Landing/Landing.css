@@ -1,0 +1,35 @@
+.landing {
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-shape-divider-bottom-1712691805 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1712691805 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 226px;
+}
+
+.custom-shape-divider-bottom-1712691805 .shape-fill {
+    fill: var(--primary-color);
+}
