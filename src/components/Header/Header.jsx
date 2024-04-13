@@ -11,8 +11,7 @@ export const Header = () => {
       const goto = event.target.value;
       if (!isValidComponent(goto)) {
         alert("Component not found");
-      }
-      navigate(goto);
+      } else navigate(goto);
     }
   };
   return (
