@@ -1,4 +1,4 @@
-import { useContext, createContext, useEffect, useState } from "react";
+import { useContext, createContext, useState } from "react";
 import { componentList } from "../data/components";
 
 export const Data = createContext();
@@ -18,6 +18,7 @@ export const DataProvider = ({ children }) => {
   const value = {
     componentsList,
     isValidComponent,
+    setComponentList,
   };
 
   return <Data.Provider value={value}>{children}</Data.Provider>;
