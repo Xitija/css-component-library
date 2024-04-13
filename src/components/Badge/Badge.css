@@ -1,0 +1,41 @@
+.badge {
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+}
+
+.sm-badge {
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+.md-badge {
+    font-size: 0.9em;
+    padding: 0.3em;
+}
+
+.lg-badge {
+    font-size: 1.1em;
+    padding: 0.3em;
+}
+
+.danger-badge {
+    background-color: red;
+}
+
+.success-badge {
+    background-color: green;
+}
+
+.info-badge {
+    background-color: blue;
+}
+
+.warning-badge {
+    background-color: rgb(255, 208, 0);
+}
+
+.fun-badge {
+    background-color: purple;
+}
