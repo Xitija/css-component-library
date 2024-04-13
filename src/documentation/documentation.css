@@ -1,0 +1,37 @@
+.container {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+}
+
+.container > * {
+    margin: 0.5rem;
+}
+
+code {
+    color: var(--tertiary-color);
+    /* font-size: 20px; */
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: var(--xs-font-size);
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.language-jsx {
+    color: black;
+}
