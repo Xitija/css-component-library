@@ -1,0 +1,48 @@
+.card {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.card-badge {
+    height: 35%;
+    position: relative;
+}
+
+/* .card-title {
+    font-size: 16px;
+    font-weight: bold;
+} */
+
+.card-description {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card-image {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid lightgray;
+    width: fit-content;
+    height: 20%;
+}
+
+.card-image:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+}
+
+.corner {
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    margin: 0.5rem;
+}
