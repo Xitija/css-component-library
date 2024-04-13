@@ -1,0 +1,86 @@
+.input {
+    border-radius: 5px;
+    background: transparent;
+}
+
+.input:disabled,
+.input[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.input:readonly,
+.input[readonly] {
+    border: 1px solid #999999;
+    background-color: #ebe7e7;
+    color: #000;
+    cursor: not-allowed;
+}
+
+.simple-input {
+    color: #000;
+    border: 2px solid #999999;
+}
+
+.simple-input::placeholder {
+    color: #cccccc;
+}
+
+.simple-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px var(--secondary-color);
+}
+
+.filled-input {
+    background: #ededed;
+    border: 2px solid #cccccc;
+}
+
+.filled-input:focus {
+    background: white;
+    box-shadow: 0 0 0 5px var(--secondary-color);
+    /* outline: 2px solid var(--ghost-green-color); */
+}
+
+.clean-input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    border-radius: 0;
+}
+
+.clean-input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+.clear-input {
+    border: none;
+    background: transparent;
+}
+
+.clear-input:focus {
+    outline: none;
+}
+
+.xs-input {
+    font-size: var(--xs-font-size);
+    padding: var(--xs-padding);
+}
+
+.md-input {
+    font-size: var(--md-font-size);
+    padding: var(--md-padding);
+}
+
+.sm-input {
+    font-size: var(--sm-font-size);
+    padding: var(--sm-padding);
+}
+
+.lg-input {
+    font-size: var(--lg-font-size);
+    padding: var(--lg-padding);
+}
