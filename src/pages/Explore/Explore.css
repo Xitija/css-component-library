@@ -1,0 +1,24 @@
+h2 {
+    /* padding: 0 10%; */
+    margin: 3% 10%;
+}
+
+.tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.component-tile {
+    flex: 1 0 15rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    text-align: center;
+    /* max-width: 15rem; */
+}
