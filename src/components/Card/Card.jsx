@@ -33,7 +33,7 @@ export const CardImage = ({ title, description, imageSrc, imageInfo }) => {
       {image === "placeholder" && (
         <div className="card-image">
           <div className="placeholder">
-            <img src="https://via.placeholder.com/200" alt="Placeholder image" />
+            <img src="https://via.placeholder.com/200" alt="Placeholder" />
           </div>
           <h3>{title}</h3>
           <p>{description}</p>

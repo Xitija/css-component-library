@@ -33,3 +33,12 @@
 .custom-shape-divider-bottom-1712691805 .shape-fill {
     fill: var(--primary-color);
 }
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: var(--primary-color);
+}
