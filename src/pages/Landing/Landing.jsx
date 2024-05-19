@@ -1,4 +1,5 @@
 import "./Landing.css";
+import { FaGithubSquare } from "react-icons/fa";
 
 export const Landing = () => {
   return (
@@ -6,6 +7,7 @@ export const Landing = () => {
       <div className="landing-content">
         <h1 style={{ margin: "0px" }}>React CSS Component Library</h1>
         <h3>A collection of components for modern web development</h3>
+        <a href="https://github.com/Xitija/css-component-library"> <FaGithubSquare size={50} /></a>
       </div>
       <div class="custom-shape-divider-bottom-1712691805">
         <svg
